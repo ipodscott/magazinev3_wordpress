@@ -393,7 +393,7 @@ img {
     padding: 0 0 20px 0
 }
 
-.two-columns{
+.multi-columns{
 	display: block;
 	position: relative;
 	clear: both;
@@ -427,6 +427,10 @@ img {
     display: block;
     float: left;
     width: calc(33.3% - 60px)
+}
+
+.multi-columns .non-pop, .multi-columns .pop-image {
+		width: 100%;
 }
 
 .quarter {

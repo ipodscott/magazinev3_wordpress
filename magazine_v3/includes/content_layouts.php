@@ -34,11 +34,13 @@
 					
 					<?php elseif(get_row_layout() == "two_columns"):?>
 		
-					
-			 
-							   <?php include('two-columns.php');?>
-			    
+							 
+							<?php include('two-columns.php');?>
+							   
+					<?php elseif(get_row_layout() == "three_columns"):?>
 
+			    
+							<?php include('three-columns.php');?>
 				
 				<?php endif; ?>
 				<?php endwhile; ?>	 
