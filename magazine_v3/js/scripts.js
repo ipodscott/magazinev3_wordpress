@@ -17,6 +17,15 @@ $(document).ready(function () {
         }
     });
     
+    
+     
+  
+  $(window).scroll(function(){
+    
+    $(".fadey").css("opacity", 1.0 - $(window).scrollTop() / 1500);
+    
+  });
+    
      /* Accordion */
     
     

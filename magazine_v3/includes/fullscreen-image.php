@@ -1,4 +1,4 @@
-<div name="<?php the_sub_field('menu_link');?>" class="full-panel parallax <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>" style="background-image:url(<?php the_sub_field('cover_background');?>);" name="parallax">
+<div name="<?php the_sub_field('menu_link');?>" class="fadey full-panel parallax <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>" style="background-image:url(<?php the_sub_field('cover_background');?>);">
     <div class="panel-overlay <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>"></div>
 	<div class="middle">
 	    <div class="main-content">
