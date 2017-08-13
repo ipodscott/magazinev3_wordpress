@@ -746,17 +746,16 @@ f .full,
     background-color: #333
 }
 
-.menu-title {
-    text-align: left;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px;
-    color: #999;
-    font-size: 18px
+
+.menu-title, .menu-footer {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.menu-title img{
+.menu-title img, .menu-footer img{
 	max-width: 90% !important;
+	opacity: 0.6;
+	-webkit-opacity: 0.6;
 }
 
 .close-menu {

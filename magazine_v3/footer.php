@@ -42,7 +42,7 @@
 <i class="material-icons menu-btn">menu</i>
 
 <div class="menu shadow">
-    <div class="menu-title"><img src="/wp-content/uploads/2017/08/vhs_reverse.svg"/></div>
+    <div class="menu-title"><img src="<?php echo get_template_directory_uri(); ?>/images/menu-title.svg"/></div>
     <ul>
         
         <?php while(has_sub_field("page_content")): ?>
@@ -63,7 +63,7 @@
 		<?php endwhile; ?>
         
     </ul>
-    
+     <div class="menu-footer"><img src="<?php echo get_template_directory_uri(); ?>/images/menu_footer.svg"/></div>
     
     <i class="material-icons close-menu">close</i>
 </div>
