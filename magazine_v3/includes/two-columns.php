@@ -1,8 +1,8 @@
-<div class="row">
+<div class="row two-columns">
 								   
 								   <?php if( get_sub_field('show_or_hide_section_heading') ): ?>
 					
-								   			<div class="full"><h2><?php the_sub_field('section_heading');?></h2></div>
+								   			<div class="full <?php the_sub_field('show_or_hide_section_heading'); ?>"><h2><?php the_sub_field('section_heading');?></h2></div>
 					
 								   <?php endif; ?>
 								   

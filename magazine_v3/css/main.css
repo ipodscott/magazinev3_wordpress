@@ -276,9 +276,14 @@ img {
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: scroll;
-    clear: both;
+    clear: both !important;
     overflow: hidden;
     background-color: #e3e3e3;
+}
+
+.full-panel.auto{
+	height: auto;
+	min-height: auto;
 }
 
 @media (max-width:760px) {
@@ -310,7 +315,7 @@ img {
     position: relative;
     height: 50vh;
     min-height: 400px;
-    margin: 0 auto 120px auto;
+    margin: 0 auto 0 auto;
     width: 100%;
     background-size: calc(100vh + 75vw);
     background-repeat: no-repeat;
@@ -354,6 +359,10 @@ img {
     width: 100%
 }
 
+.middle.top{
+	vertical-align: top;
+}
+
 .full {
     display: block;
     float: none;
@@ -382,6 +391,13 @@ img {
     width: 100%;
     height: auto;
     padding: 0 0 20px 0
+}
+
+.two-columns{
+	display: block;
+	position: relative;
+	clear: both;
+	float: left;
 }
 
 .half {

@@ -1,5 +1,6 @@
-<div name="<?php the_sub_field('menu_link');?>" class="full-panel">
-		<div class="middle">
+<div name="<?php the_sub_field('menu_link');?>" class="full-panel <?php if( get_sub_field('auto_height') ): ?>auto<?php endif; ?>">
+		<div class="middle <?php if( get_sub_field('align_top') ): ?>top<?php endif; ?>">
+		
 		<div class="main-content">
 		    	
 		    	<?php while(has_sub_field("content_layouts")): ?>
@@ -42,6 +43,7 @@
 				<?php endif; ?>
 				<?php endwhile; ?>	 
 		    
+			</div>
 		</div>
 	</div>
 </div>

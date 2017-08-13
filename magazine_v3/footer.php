@@ -49,15 +49,19 @@
 
 		<?php if(get_row_layout() == "full_screen_cover_with_image"):?>
 		
-			<li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li>
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
 			
 		<?php elseif(get_row_layout() == "full_screen_cover_with_video"):?>
 			
-			<li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li>
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
+		
+		<?php elseif(get_row_layout() == "half_screen_cover_with_image"):?>
+		
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
 			
 		<?php elseif(get_row_layout() == "content_layouts"):?>
 		
-			<li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li>
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
 		    
 		<?php endif; ?>
 		<?php endwhile; ?>

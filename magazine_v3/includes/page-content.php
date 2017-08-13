@@ -8,6 +8,10 @@
 	
 	<?php include('fullscreen-video.php');?>
 	
+<?php elseif(get_row_layout() == "half_screen_cover_with_image"):?>
+	
+	<?php include('halfscreen-image.php');?>
+	
 <?php elseif(get_row_layout() == "content_layouts"):?>
 
 	<?php include('content_layouts.php');?>
