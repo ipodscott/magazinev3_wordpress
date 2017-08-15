@@ -14,6 +14,5 @@ Magazine is a slim framework primarily designed for tablets and desktop as eithe
 * Dynamically loading iframe, audio and video 
 * Lightweight JS, and CSS
 * Sidr style menu
-* Prohibitive scrolling during lightbox events
 * Lightweight Parallax optimized for iOS
 * Scalable H1, and H2 fonts
