@@ -19,8 +19,8 @@ Magazine is a slim framework primarily designed for tablets and desktop as eithe
 
 ## Updates:
 17/03/17 - Added new scalable modal videos funcrtionality and design
-17/04/24 - Adjusted padding for tablet and mobile devices.
+17/04/24 - Adjusted padding for tablet and mobile devices
 17/05/04 - Added Accordions
 17/05/04 - Replaced font Awesome with Google Material Icons
 17/05/04 - iframe correctly empties when closing YouTube, Vimeo, Wistia, or any other iframe based videos
-17/05/04 - Removed default YouTube video from iframe.
+17/05/04 - Removed default YouTube video from iframe
