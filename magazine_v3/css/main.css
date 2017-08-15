@@ -17,6 +17,8 @@ body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto
+    transition: all 0.5s;
+    left: 0px;
 }
 
 .all {
@@ -24,7 +26,7 @@ body {
     position: relative;
     clear: both;
     margin-left: 0;
-    transition: all 1s;
+    transition: all 0.5;
     float: left;
     width: 100%;
     height: 100%;
@@ -161,12 +163,21 @@ h3 {
 .small-title{
 	font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-	font-size: calc(60% + 0.75vw)!important;
+	font-size: calc(45% + 0.5vw)!important;
 	font-weight: 700;
-	letter-spacing: 0.25em;
+	letter-spacing: 0.5em;
 	margin: 50px auto 20px auto;
 	transition: all 0.5s;
 	
+}
+
+.small-title sup{
+	display: inline-block;
+	position: relative;
+	float: none;
+	top: 2px;
+	font-size: calc(15% + 0.50vw)!important;
+	letter-spacing: 0.2em; 
 }
 
 @media (max-width:760px) {
@@ -177,7 +188,7 @@ h3 {
 
 .small-title span{
 	border-style: solid;
-	border-width: 3px;
+	border-width: 2px;
 	border-color: #efefef;
 	padding: 10px;
 	padding-left: 13px;
@@ -199,7 +210,7 @@ img {
 }
 
 .dark {
-    background-color: #212121;
+    background-color: #0d0d0d;
     color: #efefef
 }
 
@@ -232,7 +243,7 @@ img {
 }
 
 .panel-overlay.dark {
-    background-color: rgba(0, 0, 0, .4)
+    background-color: rgba(0, 0, 0, .7)
 }
 
 .vid-bg-box {
@@ -267,12 +278,17 @@ img {
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: scroll;
-    clear: both;
+    clear: both !important;
     overflow: hidden;
     background-color: #e3e3e3;
 }
 
-@media (max-width:760px) {
+.full-panel.auto{
+	height: auto;
+	min-height: auto;
+}
+
+@media (max-width:767px) {
     .full-panel {
 	    height: calc(100vh - 120px);
 	    min-height: calc(100% - 120px);
@@ -282,8 +298,25 @@ img {
 }
 
 .full-panel-logo img{
-	width: 100% !important;
-	max-width: 600px !important;
+	display: block;
+	max-width: 800px !important;
+	position: relative;
+	float: none; margin: 0 auto;
+	max-width: 800px !important;
+	transition: all 0.5s;
+   }
+   
+   @media (max-width:1024px) {
+	   .full-panel-logo img{
+	   		max-width: 500px !important;
+   		}
+   }
+   
+  
+   
+
+.full-panel-logo img:hover{
+	
 }
 
 .half-panel {
@@ -291,7 +324,7 @@ img {
     position: relative;
     height: 50vh;
     min-height: 400px;
-    margin: 0 auto 120px auto;
+    margin: 0 auto 0 auto;
     width: 100%;
     background-size: calc(100vh + 75vw);
     background-repeat: no-repeat;
@@ -335,6 +368,10 @@ img {
     width: 100%
 }
 
+.middle.top{
+	vertical-align: top;
+}
+
 .full {
     display: block;
     float: none;
@@ -365,6 +402,13 @@ img {
     padding: 0 0 20px 0
 }
 
+.multi-columns{
+	display: block;
+	position: relative;
+	clear: both;
+	float: left;
+}
+
 .half {
     display: block;
     float: left;
@@ -392,6 +436,10 @@ img {
     display: block;
     float: left;
     width: calc(33.3% - 60px)
+}
+
+.multi-columns .non-pop, .multi-columns .pop-image {
+		width: 100%;
 }
 
 .quarter {
@@ -718,7 +766,7 @@ f .full,
 .menu ul li a {
     display: block;
     position: relative;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     text-decoration: none;
     color: #efefef
 }
@@ -727,17 +775,16 @@ f .full,
     background-color: #333
 }
 
-.menu-title {
-    text-align: left;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px;
-    color: #999;
-    font-size: 18px
+
+.menu-title, .menu-footer {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.menu-title img{
+.menu-title img, .menu-footer img{
 	max-width: 90% !important;
+	opacity: 0.6;
+	-webkit-opacity: 0.6;
 }
 
 .close-menu {
@@ -895,7 +942,7 @@ f .full,
     .three-quarters,
     .sixty,
     .forty {
-        width: calc(50% - 60px);
+        width: calc(100% - 60px);
         float: left
     }
     .third {
@@ -922,7 +969,7 @@ f .full,
     }
 }
 
-@media (max-width:760px) {
+@media (max-width:767px) {
     .quarter,
     .half,
     .three-quarters,
@@ -1082,6 +1129,7 @@ f .full,
 .standard-img,
 .widescreen-img,
 .sixteen-nine,
+.vintage-wide,
 .pal {
     max-height: calc(100vh - 122px);
     max-width: calc(100vw - 122px);

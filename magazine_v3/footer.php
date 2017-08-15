@@ -42,17 +42,28 @@
 <i class="material-icons menu-btn">menu</i>
 
 <div class="menu shadow">
-    <div class="menu-title"><img src="http://hollywoodobscura.com/wp-content/uploads/2017/05/hollywood_obscura-1.png"/></div>
+    <div class="menu-title"><img src="<?php echo get_template_directory_uri(); ?>/images/menu-title.svg"/></div>
     <ul>
-        <li><a href="#video-bg">Welcome</a></li>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#parallax">Parallax Cover</a></li>
-        <li><a href="#audio">Audio Samples</a></li>
-        <li><a href="#video">Video Sample</a></li>
-        <li><a href="#layout">Basic Layout</a></li>
-        <li><a href="#big-media">Big Media Link</a></li>
+        
+        <?php while(has_sub_field("page_content")): ?>
+
+		<?php if(get_row_layout() == "full_screen_cover"):?>
+		
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
+					
+		<?php elseif(get_row_layout() == "half_screen_cover_with_image"):?>
+		
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
+			
+		<?php elseif(get_row_layout() == "content_layouts"):?>
+		
+			<?php if( get_sub_field('exclude') ): ?><li><a href="#<?php the_sub_field('menu_link');?>"><?php the_sub_field('section_name');?></a></li><?php endif; ?>
+		    
+		<?php endif; ?>
+		<?php endwhile; ?>
+        
     </ul>
-    
+     <div class="menu-footer"><img src="<?php echo get_template_directory_uri(); ?>/images/menu_footer.svg"/></div>
     
     <i class="material-icons close-menu">close</i>
 </div>
@@ -64,10 +75,11 @@
         <div class="wide-screen">
             <div class="vid-holder">
 	            <div class="close"><i class="material-icons">close</i></div>
-                <img class="widescreen-img" src="https://s3.amazonaws.com/imglibs/bg_widescreen.gif"/>
-                <img class="standard-img" src="https://s3.amazonaws.com/imglibs/standard_bg.gif"/>
-                <img class="sixteen-nine" src="https://s3.amazonaws.com/imglibs/16x9_bg.png"/>
-                <img class="pal" src="https://s3.amazonaws.com/imglibs/pal.png"/>
+                <img class="widescreen-img" src="<?php echo get_template_directory_uri(); ?>/images/bg_widescreen.gif"/>
+                <img class="standard-img" src="<?php echo get_template_directory_uri(); ?>/images/standard_bg.gif"/>
+                <img class="sixteen-nine" src="<?php echo get_template_directory_uri(); ?>/images/16x9_bg.png"/>
+                <img class="vintage-wide" src="<?php echo get_template_directory_uri(); ?>/images/vintage-wide.png"/>
+                <img class="pal" src="<?php echo get_template_directory_uri(); ?>/images/pal.png"/>
                
                 <video id="myVideo" class="myVideo hide" src="" controls></video>
                 <iframe class="youTube hide" src="" frameborder="0" allowfullscreen></iframe>
