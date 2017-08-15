@@ -299,25 +299,36 @@ img {
 
 .full-panel-logo img{
 	display: block;
-	max-width: 800px !important;
+	max-width: 600px !important;
 	position: relative;
 	float: none; margin: 0 auto;
-	max-width: 800px !important;
-	transition: all 0.5s;
+	transition: all 0.25s;
+	top:0;
    }
+   
+   .full-panel-logo img:hover{
+	top:-5px;
+	max-width: 610px !important;
+
+}
    
    @media (max-width:1024px) {
 	   .full-panel-logo img{
-	   		max-width: 500px !important;
+	   		max-width: 400px !important;
    		}
-   }
+   		
+   		 .full-panel-logo img:hover{
+   		 	top:0;
+   		 	max-width: 400px !important;
+
+			}
+
+     }
    
   
    
 
-.full-panel-logo img:hover{
-	
-}
+
 
 .half-panel {
     display: table;
@@ -769,6 +780,9 @@ f .full,
     padding: 10px 10px 10px 30px;
     text-decoration: none;
     color: #efefef
+}
+
+.menu ul li a.clicked{
 }
 
 .menu ul li:hover {

@@ -62,8 +62,16 @@ $(document).ready(function () {
         /* $('.all').removeClass('fade'); */
         $(".menu-layer").delay(250).fadeOut(500);
     });
+    
+    
+     $(".menu ul li a").click(function () {
+	    $(".menu ul li a").stop().removeClass('clicked'); 
+	 	$(this).stop().addClass('clicked');
+     });
+    
 
     /*Audio Controls*/
+    
 
     $(".play-audio").click(function () {
 	    $('.audio-box').fadeIn();

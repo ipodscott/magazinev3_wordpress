@@ -21,7 +21,7 @@
 				
 						<div class="center">
 							<span class="full-panel-logo">
-								<img style="opacity:<?php the_sub_field('opacity')?>; -webkit-opacity:<?php the_sub_field('opacity')?>;" src="<?php the_sub_field('image_or_logo'); ?>"/>
+								<a href="<?php the_sub_field('cover_link');?>"><img style="opacity:<?php the_sub_field('opacity')?>; -webkit-opacity:<?php the_sub_field('opacity')?>;" src="<?php the_sub_field('image_or_logo'); ?>"/></a>
 							</span>
 						</div>
 					
