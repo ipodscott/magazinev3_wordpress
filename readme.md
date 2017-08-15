@@ -1,0 +1,1 @@
+# Magazine WordPress Theme V.3
