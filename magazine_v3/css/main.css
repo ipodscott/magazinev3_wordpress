@@ -636,7 +636,7 @@ f .full,
     cursor: pointer
 }
 
-.big-play {
+.big-play, .big-tube {
     display: block;
     position: relative;
     margin: 0 auto;

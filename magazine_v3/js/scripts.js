@@ -129,7 +129,7 @@ $(document).ready(function () {
         closeAudio();
            });
     
-    $( ".tube-link" ).click(function() {
+    $( ".tube-link, .big-tube" ).click(function() {
         $('.youTube').removeClass("hide");
         $('.youTube').addClass("show");
         $('.myVideo').addClass("hide");
