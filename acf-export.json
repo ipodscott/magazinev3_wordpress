@@ -1780,7 +1780,7 @@
                                                             {
                                                                 "key": "field_598ca4635edaf",
                                                                 "label": "Select Video Format",
-                                                                "name": "col-one-select_video_format",
+                                                                "name": "select_video_format",
                                                                 "type": "select",
                                                                 "instructions": "",
                                                                 "required": 0,
@@ -2393,7 +2393,7 @@
                                                             {
                                                                 "key": "field_598cdc80d06fd",
                                                                 "label": "Select Video Format",
-                                                                "name": "col-two-select_video_format",
+                                                                "name": "select_video_format",
                                                                 "type": "select",
                                                                 "instructions": "",
                                                                 "required": 0,
@@ -2987,7 +2987,7 @@
                                                             {
                                                                 "key": "field_5990807f5b450",
                                                                 "label": "Select Video Format",
-                                                                "name": "col-one-select_video_format",
+                                                                "name": "select_video_format",
                                                                 "type": "select",
                                                                 "instructions": "",
                                                                 "required": 0,
@@ -3504,7 +3504,7 @@
                                                             {
                                                                 "key": "field_5990807f5b469",
                                                                 "label": "Select Video Format",
-                                                                "name": "col-two-select_video_format",
+                                                                "name": "select_video_format",
                                                                 "type": "select",
                                                                 "instructions": "",
                                                                 "required": 0,
@@ -4021,7 +4021,7 @@
                                                             {
                                                                 "key": "field_599080db5b47f",
                                                                 "label": "Select Video Format",
-                                                                "name": "col-three-select_video_format",
+                                                                "name": "select_video_format",
                                                                 "type": "select",
                                                                 "instructions": "",
                                                                 "required": 0,

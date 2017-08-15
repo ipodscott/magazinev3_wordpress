@@ -1,4 +1,4 @@
-<div name="<?php the_sub_field('menu_link');?>" class="full-panel <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>" >
+<div class="full-panel <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>" >
     <div class="vid-bg-box">
         <video src="<?php the_sub_field('cover_background_video');?>" class="video_background" autoplay="autoplay" loop="loop"> </video>
     </div>
@@ -10,7 +10,7 @@
 					
 					<?php if(get_row_layout() == "image_or_logo"):?>
 				
-						<div class="center" style="opacity:<?php the_sub_field('opacity')?>; -webkit-opacity:<?php the_sub_field('opacity')?>;"><span class="full-panel-logo"><img src="<?php the_sub_field('image_or_logo'); ?>"/></span></div>
+						<div class="center"><span class="full-panel-logo"><img src="<?php the_sub_field('image_or_logo'); ?>"/></span></div>
 					
 					<?php elseif(get_row_layout() == "title"):?>
 							

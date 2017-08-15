@@ -1,4 +1,4 @@
-<div name="<?php the_sub_field('menu_link');?>" class="fadey full-panel parallax <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>" style="background-image:url(<?php the_sub_field('cover_background');?>);">
+<div class="full-panel parallax <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>" style="background-image:url(<?php the_sub_field('cover_background');?>);" name="parallax">
     <div class="panel-overlay <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>"></div>
 	<div class="middle">
 	    <div class="main-content">
@@ -7,7 +7,7 @@
 					
 					<?php if(get_row_layout() == "image_or_logo"):?>
 				
-						<div class="center"><span class="full-panel-logo"><img style="opacity:<?php the_sub_field('opacity')?>; -webkit-opacity:<?php the_sub_field('opacity')?>;" src="<?php the_sub_field('image_or_logo'); ?>"/></span></div>
+						<div class="center"><span class="full-panel-logo"><img src="<?php the_sub_field('image_or_logo'); ?>"/></span></div>
 					
 					<?php elseif(get_row_layout() == "title"):?>
 							

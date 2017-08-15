@@ -17,15 +17,6 @@ $(document).ready(function () {
         }
     });
     
-    
-     
-  
-  $(window).scroll(function(){
-    
-    $(".fadey").css("opacity", 1.0 - $(window).scrollTop() / 1500);
-    
-  });
-    
      /* Accordion */
     
     
@@ -150,12 +141,6 @@ $(document).ready(function () {
         $(".pal").addClass("show");
     });
     
-    $(".vintage-wide-btn").click(function() { 
-        $(".modal-vid").fadeIn(500);
-        $(".vid-holder img").removeClass("show");
-        $(".vintage-wide").addClass("show");
-    });
-    
     
     $(".close").click(function() { 
         $(".modal-vid").fadeOut(500);
@@ -234,7 +219,7 @@ window.document.onkeydown = function (e) {
     if (!e) e = event;
     if (e.keyCode == 27) {
 	   
-	    $('.img-pop-box,.img-holder img, .close-media').fadeOut(500, function () {
+	    $('.img-pop-box, .close-media').fadeOut(500, function () {
             $('.media-overlay').fadeOut(500);
             $('.myImage').attr("src", 'images/place_holder.jpg'); 
         }); 
