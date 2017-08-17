@@ -302,12 +302,12 @@ img {
 	max-width: 600px !important;
 	position: relative;
 	float: none; margin: 0 auto;
-	transition: all 0.25s;
+	transition: all 1s;
 	top:0;
    }
    
    .full-panel-logo img:hover{
-	top:-5px;
+	top:5px;
 	max-width: 610px !important;
 
 }
@@ -645,6 +645,11 @@ f .full,
     opacity: .3;
     cursor: pointer
 }
+.half-panel .lt-btn{display: none;}
+
+
+.half-panel.dark .dark-btn{ display: none; }
+.half-panel.dark .lt-btn{ display: block; }
 
 .vid-link,
 .tube-link {
@@ -1168,7 +1173,7 @@ f .full,
     width: 100%;
     height: 100%;
     background-color: #000;
-    background-image: url(https://s3.amazonaws.com/imglibs/video_bg.png);
+    background-image: url(../images/ripple.svg);
     background-position: center center;
     background-repeat: no-repeat
 }

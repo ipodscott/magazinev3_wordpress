@@ -42,13 +42,14 @@
 		.open-overlay-logo{
 			display: table-cell;
 			vertical-align: middle;
-			opacity: 0.2;
-			-webkit-opacity: 0.2;
 		}
 		
 		.open-overlay-logo img{
-			max-width: 120px !important;
-			width: 90%;
+			width: 240px;
+			background-position: center center;
+			background-size: 120px 120px;
+			background-repeat: no-repeat;
+			background-image: url(<?php bloginfo('template_directory'); ?>/images/disk_bg.svg);
 		}
 		
 	</style>
