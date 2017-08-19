@@ -1,8 +1,10 @@
 $(document).ready(function () {
 	
-
-	$('.open-overlay').delay(2000).fadeOut(500, function(){});
-	 $('.all').delay(500).fadeTo(500, 1);
+	$('.open-overlay').delay(2000).fadeOut(500, function(){
+		$('body').removeClass('fade');
+	});
+	
+	$('.all').delay(500).fadeTo(500, 1);
 	
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

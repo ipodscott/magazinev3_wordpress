@@ -77,8 +77,8 @@
 	            <div class="close"><i class="material-icons">close</i></div>
                 <img class="widescreen-img" src="<?php echo get_template_directory_uri(); ?>/images/bg_widescreen.gif"/>
                 <img class="standard-img" src="<?php echo get_template_directory_uri(); ?>/images/standard_bg.gif"/>
-                <img class="sixteen-nine" src="<?php echo get_template_directory_uri(); ?>/images/16x9_bg.png"/>
-                <img class="vintage-wide" src="<?php echo get_template_directory_uri(); ?>/images/vintage-wide.png"/>
+                <img class="sixteen-nine" src="<?php echo get_template_directory_uri(); ?>/images/16x9_bg.gif"/>
+                <img class="vintage-wide" src="<?php echo get_template_directory_uri(); ?>/images/vintage-wide.gif"/>
                 <img class="pal" src="<?php echo get_template_directory_uri(); ?>/images/pal.png"/>
                
                 <video id="myVideo" class="myVideo hide" src="" controls></video>

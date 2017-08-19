@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <title></title>
+    <title><?php the_title();?></title>
       
 	<style>
 		
@@ -56,6 +56,6 @@
 
             
     </head>
-<body>
+<body class="fade">
 	<!-- Open ALl --> <div class="all" name="the-top">
 <?php wp_head(); ?>
