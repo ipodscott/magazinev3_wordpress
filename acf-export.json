@@ -291,6 +291,241 @@
                                         "min": "",
                                         "max": ""
                                     },
+                                    "5998af86dfdad": {
+                                        "key": "5998af86dfdad",
+                                        "name": "big_media_link",
+                                        "label": "Big Media Link",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_5998af98dfdae",
+                                                "label": "Select Video Type",
+                                                "name": "",
+                                                "type": "tab",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "placement": "top",
+                                                "endpoint": 0
+                                            },
+                                            {
+                                                "key": "field_5998afafdfdaf",
+                                                "label": "Select Video Type",
+                                                "name": "select_video_type",
+                                                "type": "select",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "choices": {
+                                                    "mp4": "MP4",
+                                                    "youtube": "YouTube"
+                                                },
+                                                "default_value": [],
+                                                "allow_null": 0,
+                                                "multiple": 0,
+                                                "ui": 0,
+                                                "ajax": 0,
+                                                "return_format": "value",
+                                                "placeholder": ""
+                                            },
+                                            {
+                                                "key": "field_5998afd6dfdb0",
+                                                "label": "Video Content",
+                                                "name": "",
+                                                "type": "tab",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "placement": "top",
+                                                "endpoint": 0
+                                            },
+                                            {
+                                                "key": "field_5998affadfdb1",
+                                                "label": "MP4 Source",
+                                                "name": "mp4_source",
+                                                "type": "select",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_5998afafdfdaf",
+                                                            "operator": "==",
+                                                            "value": "mp4"
+                                                        }
+                                                    ]
+                                                ],
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "choices": {
+                                                    "upload": "Upload",
+                                                    "url": "Remote URL"
+                                                },
+                                                "default_value": [],
+                                                "allow_null": 0,
+                                                "multiple": 0,
+                                                "ui": 0,
+                                                "ajax": 0,
+                                                "return_format": "value",
+                                                "placeholder": ""
+                                            },
+                                            {
+                                                "key": "field_5998b025dfdb2",
+                                                "label": "MP4 Upload",
+                                                "name": "mp4_upload",
+                                                "type": "file",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_5998affadfdb1",
+                                                            "operator": "==",
+                                                            "value": "upload"
+                                                        },
+                                                        {
+                                                            "field": "field_5998afafdfdaf",
+                                                            "operator": "==",
+                                                            "value": "mp4"
+                                                        }
+                                                    ]
+                                                ],
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": "url",
+                                                "library": "all",
+                                                "min_size": "",
+                                                "max_size": "",
+                                                "mime_types": ""
+                                            },
+                                            {
+                                                "key": "field_5998b093dfdb4",
+                                                "label": "MP4 Remote Source",
+                                                "name": "mp4_remote_source",
+                                                "type": "text",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_5998affadfdb1",
+                                                            "operator": "==",
+                                                            "value": "url"
+                                                        },
+                                                        {
+                                                            "field": "field_5998afafdfdaf",
+                                                            "operator": "==",
+                                                            "value": "mp4"
+                                                        }
+                                                    ]
+                                                ],
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "default_value": "",
+                                                "placeholder": "",
+                                                "prepend": "",
+                                                "append": "",
+                                                "maxlength": ""
+                                            },
+                                            {
+                                                "key": "field_5998b0cedfdb6",
+                                                "label": "YouTube",
+                                                "name": "youtube",
+                                                "type": "text",
+                                                "instructions": "Use only the see the example below highlighted in red:<br \/>\r\nhttps:\/\/www.youtube.com\/watch?v=<span style=\"color:red;\">dZOaI_Fn5o4<\/span>",
+                                                "required": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_5998afafdfdaf",
+                                                            "operator": "==",
+                                                            "value": "youtube"
+                                                        }
+                                                    ]
+                                                ],
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "default_value": "",
+                                                "placeholder": "",
+                                                "prepend": "",
+                                                "append": "",
+                                                "maxlength": ""
+                                            },
+                                            {
+                                                "key": "field_5998b0f5dfdb7",
+                                                "label": "Video Size",
+                                                "name": "",
+                                                "type": "tab",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "placement": "top",
+                                                "endpoint": 0
+                                            },
+                                            {
+                                                "key": "field_5998b110dfdb8",
+                                                "label": "Select",
+                                                "name": "select",
+                                                "type": "select",
+                                                "instructions": "Use this to select the correct aspect ratio for you video.",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "choices": {
+                                                    "sixteen-nine-btn": "16x9 HD",
+                                                    "widscreen-btn": "Widescreen 2.35x1",
+                                                    "standard-btn": "Standard 4x3",
+                                                    "vintage-wide-btn": "Vintage Widscreen",
+                                                    "pal-btn": "UK Pal"
+                                                },
+                                                "default_value": [],
+                                                "allow_null": 0,
+                                                "multiple": 0,
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "return_format": "value",
+                                                "placeholder": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
                                     "598da50bd8403": {
                                         "key": "598da50bd8403",
                                         "name": "small_title",

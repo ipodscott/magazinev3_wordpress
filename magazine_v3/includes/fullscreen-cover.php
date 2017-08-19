@@ -13,7 +13,7 @@
 
     <div class="panel-overlay <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>"></div>
 	<div class="middle">
-	    <div class="main-content">
+	    <div class="main-content <?php if( get_sub_field('dark_light') ): ?> dark<?php endif; ?>">
 		    
 		    	<?php while(has_sub_field("cover_content")): ?>
 					
@@ -35,7 +35,13 @@
 						
 					<?php elseif(get_row_layout() == "link"):?>	
 						
-						<div class="break center"><a href="<?php the_sub_field('link'); ?>"><btn><?php the_sub_field('link_title'); ?></btn></a></div>	
+						<div class="break center"><a href="<?php the_sub_field('link'); ?>"><btn><?php the_sub_field('link_title'); ?></btn></a></div>
+					
+					<?php elseif(get_row_layout() == "big_media_link"):?>
+						
+						
+						<?php include('big-media-link.php');?>			
+
 	
 				<?php endif; ?>
 				<?php endwhile; ?>

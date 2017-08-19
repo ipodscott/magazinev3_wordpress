@@ -214,9 +214,14 @@ img {
     color: #efefef
 }
 
+
 .light {
     background-color: #e3e3e3;
     color: #333
+}
+
+.main-content.dark{
+	background-color: transparent !important;
 }
 
 .panel {
@@ -357,6 +362,7 @@ img {
     width: calc(100% - 60px);
     padding: 0
 }
+
 
 .cover-title-image {
     display: block;
@@ -646,10 +652,10 @@ f .full,
     cursor: pointer
 }
 .half-panel .lt-btn{display: none;}
+.main-content .lt-btn{display: none;}
 
-
-.half-panel.dark .dark-btn{ display: none; }
-.half-panel.dark .lt-btn{ display: block; }
+.half-panel.dark .dark-btn, .main-content.dark .dark-btn{ display: none; }
+.half-panel.dark .lt-btn, .main-content.dark .lt-btn{ display: block; }
 
 .vid-link,
 .tube-link {
