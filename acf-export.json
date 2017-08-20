@@ -2179,13 +2179,61 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
+                                                                "key": "field_5999c734b96c6",
+                                                                "label": "YouTube Thumb",
+                                                                "name": "youtube_thumb",
+                                                                "type": "select",
+                                                                "instructions": "Use default to use the default YouTube thumb or Custom to use your own thumb.",
+                                                                "required": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_598ca4635edaf",
+                                                                            "operator": "==",
+                                                                            "value": "youtube"
+                                                                        }
+                                                                    ]
+                                                                ],
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "default": "Default",
+                                                                    "custom": "Custom"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
+                                                            },
+                                                            {
                                                                 "key": "field_598ca5545edb4",
                                                                 "label": "Video Thumb",
                                                                 "name": "video_thumb",
                                                                 "type": "image",
                                                                 "instructions": "",
                                                                 "required": 0,
-                                                                "conditional_logic": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_598ca4635edaf",
+                                                                            "operator": "==",
+                                                                            "value": "mp4"
+                                                                        }
+                                                                    ],
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5999c734b96c6",
+                                                                            "operator": "==",
+                                                                            "value": "custom"
+                                                                        }
+                                                                    ]
+                                                                ],
                                                                 "wrapper": {
                                                                     "width": "",
                                                                     "class": "",
@@ -2792,13 +2840,61 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
+                                                                "key": "field_5999c90985a00",
+                                                                "label": "YouTube Thumb",
+                                                                "name": "youtube_thumb",
+                                                                "type": "select",
+                                                                "instructions": "Use default to use the default YouTube thumb or Custom to use your own thumb.",
+                                                                "required": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_598cdc80d06fd",
+                                                                            "operator": "==",
+                                                                            "value": "youtube"
+                                                                        }
+                                                                    ]
+                                                                ],
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "default": "Default",
+                                                                    "custom": "Custom"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
+                                                            },
+                                                            {
                                                                 "key": "field_598cdc80d0703",
                                                                 "label": "Video Thumb",
                                                                 "name": "video_thumb",
                                                                 "type": "image",
                                                                 "instructions": "",
                                                                 "required": 0,
-                                                                "conditional_logic": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_598cdc80d06fd",
+                                                                            "operator": "==",
+                                                                            "value": "mp4"
+                                                                        }
+                                                                    ],
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5999c90985a00",
+                                                                            "operator": "==",
+                                                                            "value": "custom"
+                                                                        }
+                                                                    ]
+                                                                ],
                                                                 "wrapper": {
                                                                     "width": "",
                                                                     "class": "",
@@ -3386,13 +3482,61 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
+                                                                "key": "field_5999ca1c27e1c",
+                                                                "label": "YouTube Thumb",
+                                                                "name": "youtube_thumb",
+                                                                "type": "select",
+                                                                "instructions": "Use default to use the default YouTube thumb or Custom to use your own thumb.",
+                                                                "required": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5990807f5b450",
+                                                                            "operator": "==",
+                                                                            "value": "youtube"
+                                                                        }
+                                                                    ]
+                                                                ],
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "default": "Default",
+                                                                    "custom": "Custom"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
+                                                            },
+                                                            {
                                                                 "key": "field_5990807f5b456",
                                                                 "label": "Video Thumb",
                                                                 "name": "video_thumb",
                                                                 "type": "image",
                                                                 "instructions": "",
                                                                 "required": 0,
-                                                                "conditional_logic": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5990807f5b450",
+                                                                            "operator": "==",
+                                                                            "value": "mp4"
+                                                                        }
+                                                                    ],
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5999ca1c27e1c",
+                                                                            "operator": "==",
+                                                                            "value": "custom"
+                                                                        }
+                                                                    ]
+                                                                ],
                                                                 "wrapper": {
                                                                     "width": "",
                                                                     "class": "",
@@ -3903,13 +4047,61 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
+                                                                "key": "field_5999cb265418f",
+                                                                "label": "YouTube Thumb",
+                                                                "name": "youtube_thumb",
+                                                                "type": "select",
+                                                                "instructions": "Use default to use the default YouTube thumb or Custom to use your own thumb.",
+                                                                "required": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5990807f5b469",
+                                                                            "operator": "==",
+                                                                            "value": "youtube"
+                                                                        }
+                                                                    ]
+                                                                ],
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "default": "Default",
+                                                                    "custom": "Custom"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
+                                                            },
+                                                            {
                                                                 "key": "field_5990807f5b46f",
                                                                 "label": "Video Thumb",
                                                                 "name": "video_thumb",
                                                                 "type": "image",
                                                                 "instructions": "",
                                                                 "required": 0,
-                                                                "conditional_logic": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5990807f5b469",
+                                                                            "operator": "==",
+                                                                            "value": "mp4"
+                                                                        }
+                                                                    ],
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5999cb265418f",
+                                                                            "operator": "==",
+                                                                            "value": "custom"
+                                                                        }
+                                                                    ]
+                                                                ],
                                                                 "wrapper": {
                                                                     "width": "",
                                                                     "class": "",
@@ -4420,13 +4612,61 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
+                                                                "key": "field_5999cc00ed483",
+                                                                "label": "YouTube Thumb",
+                                                                "name": "youtube_thumb",
+                                                                "type": "select",
+                                                                "instructions": "Use default to use the default YouTube thumb or Custom to use your own thumb.",
+                                                                "required": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_599080db5b47f",
+                                                                            "operator": "==",
+                                                                            "value": "youtube"
+                                                                        }
+                                                                    ]
+                                                                ],
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "default": "Default",
+                                                                    "custom": "Custom"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
+                                                            },
+                                                            {
                                                                 "key": "field_599080db5b485",
                                                                 "label": "Video Thumb",
                                                                 "name": "video_thumb",
                                                                 "type": "image",
                                                                 "instructions": "",
                                                                 "required": 0,
-                                                                "conditional_logic": 0,
+                                                                "conditional_logic": [
+                                                                    [
+                                                                        {
+                                                                            "field": "field_599080db5b47f",
+                                                                            "operator": "==",
+                                                                            "value": "mp4"
+                                                                        }
+                                                                    ],
+                                                                    [
+                                                                        {
+                                                                            "field": "field_5999cc00ed483",
+                                                                            "operator": "==",
+                                                                            "value": "custom"
+                                                                        }
+                                                                    ]
+                                                                ],
                                                                 "wrapper": {
                                                                     "width": "",
                                                                     "class": "",
