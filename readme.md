@@ -18,6 +18,8 @@ Magazine is a slim framework primarily designed for tablets and desktop as eithe
 * Scalable H1, and H2 fonts
 
 ## Updates:
+17/08/20 - Added the option to select custom or default youtube poster for video link
+
 17/03/17 - Added new scalable modal videos funcrtionality and design
 
 17/04/24 - Adjusted padding for tablet and mobile devices
