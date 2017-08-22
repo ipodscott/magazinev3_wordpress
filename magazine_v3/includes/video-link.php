@@ -1,5 +1,5 @@
 <?php $vidFormat = get_sub_field('select_video_format'); if ($vidFormat == "youtube"):?>
-	<div class="tube-link <?php the_sub_field('select_video_size'); ?>" vidurl="https://www.youtube.com/embed/<?php the_sub_field('youtube');?>?autoplay=1">
+	<div class="tube-link <?php the_sub_field('select_video_size'); ?>" vidurl="https://www.youtube.com/embed/<?php the_sub_field('youtube');?>?autoplay=1&rel=0">
 <?php endif; ?>
 											
 <?php $vidFormat = get_sub_field('select_video_format'); if ($vidFormat == "mp4"):?>
