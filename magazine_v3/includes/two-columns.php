@@ -8,19 +8,19 @@
 								   
 								   
 								   
-							    <div class="<?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "fifty_fifty"):?>half<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "narrow_left"):?>forty<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "wide_right"):?>sixty<? endif;?> <?php the_sub_field('column_one_alignment');?>">
+							    <div class="<?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "super_narrow_right"):?>three-quarters<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "super_narrow_left"):?>quarter<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "fifty_fifty"):?>half<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "narrow_left"):?>forty<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "wide_right"):?>sixty<? endif;?> <?php the_sub_field('column_one_alignment');?>">
 							    	
 							    	
 							    	<?php while(has_sub_field("column_one")): ?>
 									
-											<?php if(get_row_layout() == "column_one_video_link"):?>
+											<?php if(get_row_layout() == "column_video_link"):?>
 											
 											<?php include('video-link.php');?>					
 																	 
-											<?php elseif(get_row_layout() == "column_one_copy"):?>
+											<?php elseif(get_row_layout() == "column_copy"):?>
 												<?php the_sub_field('copy');?>
 									 										 
-											<?php elseif(get_row_layout() == "column_one_audio_link"):?>
+											<?php elseif(get_row_layout() == "column_audio_link"):?>
 											
 												<?php include('audio-link.php');?>
 																			
@@ -51,19 +51,19 @@
 							    </div>
 							    
 							   	    
-							    <div class="<?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "fifty_fifty"):?>half<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "narrow_left"):?>sixty<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "wide_right"):?>forty<? endif;?> <?php the_sub_field('column_two_alignment');?>">
+							    <div class="<?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "super_narrow_right"):?>quarter<? endif;?><?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "super_narrow_left"):?>three-quarters<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "fifty_fifty"):?>half<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "narrow_left"):?>sixty<? endif;?> <?php $columnWidth = get_sub_field('column_settings'); if ($columnWidth == "wide_right"):?>forty<? endif;?> <?php the_sub_field('column_two_alignment');?>">
 								   
 								   <?php while(has_sub_field("column_two")): ?>
 									
-											<?php if(get_row_layout() == "column_two_video_link"):?>
+											<?php if(get_row_layout() == "column_video_link"):?>
 											
 											<?php include('video-link.php');?>	
 					
 																	 
-											<?php elseif(get_row_layout() == "column_two_copy"):?>
+											<?php elseif(get_row_layout() == "column_copy"):?>
 												<?php the_sub_field('copy');?>
 									 										 
-											<?php elseif(get_row_layout() == "column_two_audio_link"):?>
+											<?php elseif(get_row_layout() == "column_audio_link"):?>
 											
 											<?php $selectAudio = get_sub_field('select_audio_file'); if ($selectAudio == "text_link"):?><div class="play-audio" audioUrl="<?php the_sub_field('audio_text_url');?>"><?php the_sub_field('audio_title');?> <i class="material-icons">volume_up</i></div><? endif;?>
 											<?php $selectAudio = get_sub_field('select_audio_file'); if ($selectAudio == "upload"):?><div class="play-audio" audioUrl="<?php the_sub_field('audio_upload');?>"><?php the_sub_field('audio_title');?> <i class="material-icons">volume_up</i></div><? endif;?>

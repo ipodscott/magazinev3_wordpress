@@ -103,7 +103,7 @@
 
 
 
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:400,500,600,700|Material+Icons" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Oswald:400,500,600,700|Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/main.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/audioplayer.css">
 <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>

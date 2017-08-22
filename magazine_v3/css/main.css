@@ -103,6 +103,23 @@ ul {
     margin: 0
 }
 
+.drop-cap {
+  float: left;
+  font-family: Oswald;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin: 6px 8px 0 0;
+  color: #3e3e3e;
+  border-style: double;
+  border-width: 8px;
+  border-color: #3e3e3e;
+  }
+
 .full ul li {
     list-style: circle;
     display: block;
@@ -462,16 +479,16 @@ img {
 .quarter {
     display: block;
     float: left;
-    width: calc(25% - 30px)
+    width: calc(35% - 60px);
 }
 
 .three-quarters {
     display: block;
     float: left;
-    width: calc(75% - 30px)
+    width: calc(65% - 60px);
 }
 
-f .full,
+.full,
 .half,
 .third,
 .quarter,
