@@ -158,9 +158,9 @@ h2 {
     font-size: 24px;
     border-width: 0 0 1px 0;
     border-style: solid;
-    border-color: #333;
+    border-color: #999;
     font-size: calc(90% + .75vw)!important;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     display: block;
     position: relative;
     clear: both;
@@ -411,7 +411,7 @@ img {
     float: none;
     position: relative;
     clear: both;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 20px auto;
     width: calc(100% - 60px)
 }
 
@@ -479,13 +479,13 @@ img {
 .quarter {
     display: block;
     float: left;
-    width: calc(35% - 60px);
+    width: calc(33.3% - 60px);
 }
 
 .three-quarters {
     display: block;
     float: left;
-    width: calc(65% - 60px);
+    width: calc(66.6% - 60px);
 }
 
 .full,
@@ -742,7 +742,11 @@ img {
     text-transform: uppercase;
     letter-spacing: .5em;
     font-size: 14px;
-    margin: 0 0 20px 0
+    margin: 0 0 20px 0;
+    border-width: 0 0 1px 0;
+    border-color: #999;
+    border-style: solid;
+    padding: 0 0 12px 0;
 }
 
 .vid-link img:hover {
@@ -984,11 +988,11 @@ img {
     .three-quarters,
     .sixty,
     .forty {
-        width: calc(100% - 60px);
+        width: calc(50% - 60px);
         float: left
     }
     .third {
-        width: calc(100% - 30px)
+        width: calc(100% - 60px)
     }
     .lower-copy .content div p img {
         width: 100%;

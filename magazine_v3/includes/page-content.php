@@ -4,6 +4,10 @@
 
 	<?php include('fullscreen-cover.php');?>
 	
+<?php elseif(get_row_layout() == "split-fullscreen"):?>
+
+	<?php include('fullscreen-split-cover.php');?>
+	
 <?php elseif(get_row_layout() == "full_screen_cover_with_video"):?>
 	
 	<?php include('fullscreen-video.php');?>
