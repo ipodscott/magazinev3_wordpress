@@ -11,7 +11,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     background-color: #000;
-    color: #3e3e3e;
+    color: #525252;
     line-height: 1.5em;
     height: 100%;
     width: 100%;
@@ -94,7 +94,7 @@ p {
     line-height: 1.5em;
     font-size: 18px;
     margin: 0 0 1.5em 0;
-    font-family: 'Lato', sans-serif
+    font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -114,10 +114,10 @@ ul {
   padding-right: 8px;
   padding-left: 8px;
   margin: 6px 8px 0 0;
-  color: #3e3e3e;
+  color: #525252;
   border-style: double;
   border-width: 8px;
-  border-color: #3e3e3e;
+  border-color: #525252;
   }
 
 .full ul li {
@@ -131,7 +131,7 @@ ul {
 }
 
 a {
-    color: #666
+    color: #2c3b4b;
 }
 
 h1 {
@@ -302,7 +302,7 @@ img {
     background-attachment: scroll;
     clear: both !important;
     overflow: hidden;
-    background-color: #e3e3e3;
+    background-color: #fffef7;
 }
 
 .full-panel.auto{
@@ -413,6 +413,10 @@ img {
     clear: both;
     margin: 0 auto 20px auto;
     width: calc(100% - 60px)
+}
+
+.full.full-title{
+	padding-bottom: 20px;
 }
 
 .break {
@@ -983,12 +987,26 @@ img {
     margin: 10px auto 0 auto
 }
 
+@media (max-width:1024px) {
+	 .third {
+        width: calc(50% - 60px)
+    }
+    
+    .third.last {
+        width: calc(100% - 60px)
+    }
+    
+    .quarter, .three-quarters{
+        width: calc(50% - 60px)
+    }
+}
+
 @media (max-width:960px) {
     .quarter,
     .three-quarters,
     .sixty,
     .forty {
-        width: calc(50% - 60px);
+        width: calc(100% - 60px);
         float: left
     }
     .third {

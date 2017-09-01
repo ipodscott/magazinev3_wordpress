@@ -2,7 +2,7 @@
 								   
 								   <?php if( get_sub_field('show_or_hide_section_heading') ): ?>
 					
-								   			<div class="full <?php the_sub_field('show_or_hide_section_heading'); ?>"><h2><?php the_sub_field('section_heading');?></h2></div>
+								   			<div class="full full-title <?php the_sub_field('show_or_hide_section_heading'); ?>"><h2><?php the_sub_field('section_heading');?></h2></div>
 					
 								   <?php endif; ?>
 								   
