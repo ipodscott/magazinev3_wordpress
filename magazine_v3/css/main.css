@@ -1027,7 +1027,7 @@ img {
     }
     
     .third.last {
-        width: calc(100% - 0px)
+        width: calc(100% - 60px)
     }
     
     .quarter, .three-quarters{
@@ -1046,6 +1046,7 @@ img {
     .third {
         width: calc(100% - 60px)
     }
+    
     .lower-copy .content div p img {
         width: 100%;
         max-width: 100%;
@@ -1074,7 +1075,7 @@ img {
     .sixty,
     .forty,
     .full,
-    .third {
+    .third, .third.last {
         width: 100%;
         display: block;
         position: relative;
