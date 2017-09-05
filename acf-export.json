@@ -685,6 +685,15 @@
                         "min": "",
                         "max": ""
                     },
+                    "599dc93802eb1": {
+                        "key": "599dc93802eb1",
+                        "name": "split-fullscreen",
+                        "label": "Split Fullscreen",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
                     "599061cc50bc2": {
                         "key": "599061cc50bc2",
                         "name": "half_screen_cover_with_image",
@@ -1993,6 +2002,31 @@
                                                                 "prepend": "",
                                                                 "append": "",
                                                                 "maxlength": ""
+                                                            },
+                                                            {
+                                                                "key": "field_59aee31643182",
+                                                                "label": "Audio Link Size",
+                                                                "name": "audio_link_size",
+                                                                "type": "select",
+                                                                "instructions": "",
+                                                                "required": 0,
+                                                                "conditional_logic": 0,
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "large": "Large",
+                                                                    "small": "Small"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
                                                             }
                                                         ],
                                                         "min": "",
@@ -2531,7 +2565,7 @@
                                                 "placeholder": ""
                                             },
                                             {
-                                                "key": "field_599c2eb951250",
+                                                "key": "field_59aeed7af675d",
                                                 "label": "Column Two",
                                                 "name": "column_two",
                                                 "type": "flexible_content",
@@ -2551,7 +2585,7 @@
                                                         "display": "block",
                                                         "sub_fields": [
                                                             {
-                                                                "key": "field_599c2eba51251",
+                                                                "key": "field_59aeed7bf675e",
                                                                 "label": "Copy",
                                                                 "name": "copy",
                                                                 "type": "wysiwyg",
@@ -2580,7 +2614,7 @@
                                                         "display": "block",
                                                         "sub_fields": [
                                                             {
-                                                                "key": "field_599c2eba51252",
+                                                                "key": "field_59aeed7bf675f",
                                                                 "label": "Accordion",
                                                                 "name": "accordion",
                                                                 "type": "repeater",
@@ -2599,7 +2633,7 @@
                                                                 "button_label": "+ Add Accordion Content",
                                                                 "sub_fields": [
                                                                     {
-                                                                        "key": "field_599c2eba51253",
+                                                                        "key": "field_59aeed7bf6760",
                                                                         "label": "Accordion Title",
                                                                         "name": "accordion_title",
                                                                         "type": "text",
@@ -2618,7 +2652,7 @@
                                                                         "maxlength": ""
                                                                     },
                                                                     {
-                                                                        "key": "field_599c2eba51254",
+                                                                        "key": "field_59aeed7bf6761",
                                                                         "label": "Accordion Copy",
                                                                         "name": "accordion_copy",
                                                                         "type": "textarea",
@@ -2649,7 +2683,7 @@
                                                         "display": "block",
                                                         "sub_fields": [
                                                             {
-                                                                "key": "field_599c2eba51255",
+                                                                "key": "field_59aeed7bf6762",
                                                                 "label": "Select Audio File",
                                                                 "name": "select_audio_file",
                                                                 "type": "select",
@@ -2674,7 +2708,7 @@
                                                                 "placeholder": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51256",
+                                                                "key": "field_59aeed7bf6763",
                                                                 "label": "Audio Upload",
                                                                 "name": "audio_upload",
                                                                 "type": "file",
@@ -2683,7 +2717,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba51255",
+                                                                            "field": "field_59aeed7bf6762",
                                                                             "operator": "==",
                                                                             "value": "upload"
                                                                         }
@@ -2701,7 +2735,7 @@
                                                                 "mime_types": "m4a, mp3, m4a"
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51257",
+                                                                "key": "field_59aeed7bf6764",
                                                                 "label": "Audio Text URL",
                                                                 "name": "audio_text_url",
                                                                 "type": "text",
@@ -2710,7 +2744,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba51255",
+                                                                            "field": "field_59aeed7bf6762",
                                                                             "operator": "==",
                                                                             "value": "text_link"
                                                                         }
@@ -2728,7 +2762,7 @@
                                                                 "maxlength": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51258",
+                                                                "key": "field_59aeed7bf6765",
                                                                 "label": "Audio Title",
                                                                 "name": "audio_title",
                                                                 "type": "text",
@@ -2745,6 +2779,31 @@
                                                                 "prepend": "",
                                                                 "append": "",
                                                                 "maxlength": ""
+                                                            },
+                                                            {
+                                                                "key": "field_59aeed7bf6766",
+                                                                "label": "Audio Link Size",
+                                                                "name": "audio_link_size",
+                                                                "type": "select",
+                                                                "instructions": "",
+                                                                "required": 0,
+                                                                "conditional_logic": 0,
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "large": "Large",
+                                                                    "small": "Small"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
                                                             }
                                                         ],
                                                         "min": "",
@@ -2757,7 +2816,7 @@
                                                         "display": "block",
                                                         "sub_fields": [
                                                             {
-                                                                "key": "field_599c2eba51259",
+                                                                "key": "field_59aeed7bf6767",
                                                                 "label": "Select Video",
                                                                 "name": "",
                                                                 "type": "tab",
@@ -2773,7 +2832,7 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5125a",
+                                                                "key": "field_59aeed7bf6768",
                                                                 "label": "Select Video Format",
                                                                 "name": "select_video_format",
                                                                 "type": "select",
@@ -2798,7 +2857,7 @@
                                                                 "placeholder": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5125b",
+                                                                "key": "field_59aeed7bf6769",
                                                                 "label": "Select Video FIle",
                                                                 "name": "select_video_file",
                                                                 "type": "select",
@@ -2807,7 +2866,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba5125a",
+                                                                            "field": "field_59aeed7bf6768",
                                                                             "operator": "==",
                                                                             "value": "mp4"
                                                                         }
@@ -2831,7 +2890,7 @@
                                                                 "placeholder": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5125c",
+                                                                "key": "field_59aeed7bf676a",
                                                                 "label": "Video Upload",
                                                                 "name": "video_upload",
                                                                 "type": "file",
@@ -2840,12 +2899,12 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba5125b",
+                                                                            "field": "field_59aeed7bf6769",
                                                                             "operator": "==",
                                                                             "value": "upload"
                                                                         },
                                                                         {
-                                                                            "field": "field_599c2eba5125a",
+                                                                            "field": "field_59aeed7bf6768",
                                                                             "operator": "==",
                                                                             "value": "mp4"
                                                                         }
@@ -2863,7 +2922,7 @@
                                                                 "mime_types": "m4v, mp4"
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5125d",
+                                                                "key": "field_59aeed7bf676b",
                                                                 "label": "Vide Text URL",
                                                                 "name": "video_text_url",
                                                                 "type": "text",
@@ -2872,7 +2931,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba5125b",
+                                                                            "field": "field_59aeed7bf6769",
                                                                             "operator": "==",
                                                                             "value": "text"
                                                                         }
@@ -2890,7 +2949,7 @@
                                                                 "maxlength": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5125e",
+                                                                "key": "field_59aeed7bf676c",
                                                                 "label": "YouTube",
                                                                 "name": "youtube",
                                                                 "type": "text",
@@ -2899,7 +2958,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba5125a",
+                                                                            "field": "field_59aeed7bf6768",
                                                                             "operator": "==",
                                                                             "value": "youtube"
                                                                         }
@@ -2917,7 +2976,7 @@
                                                                 "maxlength": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5125f",
+                                                                "key": "field_59aeed7bf676d",
                                                                 "label": "Video Info",
                                                                 "name": "",
                                                                 "type": "tab",
@@ -2933,7 +2992,7 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51260",
+                                                                "key": "field_59aeed7bf676e",
                                                                 "label": "YouTube Thumb",
                                                                 "name": "youtube_thumb",
                                                                 "type": "select",
@@ -2942,7 +3001,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba5125a",
+                                                                            "field": "field_59aeed7bf6768",
                                                                             "operator": "==",
                                                                             "value": "youtube"
                                                                         }
@@ -2966,7 +3025,7 @@
                                                                 "placeholder": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51261",
+                                                                "key": "field_59aeed7bf676f",
                                                                 "label": "Video Thumb",
                                                                 "name": "video_thumb",
                                                                 "type": "image",
@@ -2975,14 +3034,14 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba5125a",
+                                                                            "field": "field_59aeed7bf6768",
                                                                             "operator": "==",
                                                                             "value": "mp4"
                                                                         }
                                                                     ],
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba51260",
+                                                                            "field": "field_59aeed7bf676e",
                                                                             "operator": "==",
                                                                             "value": "custom"
                                                                         }
@@ -3005,7 +3064,7 @@
                                                                 "mime_types": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51262",
+                                                                "key": "field_59aeed7bf6770",
                                                                 "label": "Video Title",
                                                                 "name": "video_title",
                                                                 "type": "text",
@@ -3024,7 +3083,7 @@
                                                                 "maxlength": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51263",
+                                                                "key": "field_59aeed7bf6771",
                                                                 "label": "Video Size",
                                                                 "name": "",
                                                                 "type": "tab",
@@ -3040,7 +3099,7 @@
                                                                 "endpoint": 0
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51264",
+                                                                "key": "field_59aeed7bf6772",
                                                                 "label": "Select Size",
                                                                 "name": "select_video_size",
                                                                 "type": "select",
@@ -3078,7 +3137,7 @@
                                                         "display": "block",
                                                         "sub_fields": [
                                                             {
-                                                                "key": "field_599c2eba51265",
+                                                                "key": "field_59aeed7bf6773",
                                                                 "label": "Use Custom Thumb and Image",
                                                                 "name": "use_custom_thumb_and_image",
                                                                 "type": "true_false",
@@ -3097,7 +3156,7 @@
                                                                 "ui_off_text": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51266",
+                                                                "key": "field_59aeed7bf6774",
                                                                 "label": "Custom Thumb",
                                                                 "name": "custom_thumb",
                                                                 "type": "image",
@@ -3106,7 +3165,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba51265",
+                                                                            "field": "field_59aeed7bf6773",
                                                                             "operator": "==",
                                                                             "value": "1"
                                                                         }
@@ -3129,7 +3188,7 @@
                                                                 "mime_types": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51267",
+                                                                "key": "field_59aeed7bf6775",
                                                                 "label": "Custom Large Image",
                                                                 "name": "custom_large_image",
                                                                 "type": "image",
@@ -3138,7 +3197,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba51265",
+                                                                            "field": "field_59aeed7bf6773",
                                                                             "operator": "==",
                                                                             "value": "1"
                                                                         }
@@ -3161,7 +3220,7 @@
                                                                 "mime_types": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51268",
+                                                                "key": "field_59aeed7bf6776",
                                                                 "label": "Image Thumb",
                                                                 "name": "image_thumb",
                                                                 "type": "image",
@@ -3170,7 +3229,7 @@
                                                                 "conditional_logic": [
                                                                     [
                                                                         {
-                                                                            "field": "field_599c2eba51265",
+                                                                            "field": "field_59aeed7bf6773",
                                                                             "operator": "!=",
                                                                             "value": "1"
                                                                         }
@@ -3193,7 +3252,7 @@
                                                                 "mime_types": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba51269",
+                                                                "key": "field_59aeed7bf6777",
                                                                 "label": "Image Caption",
                                                                 "name": "image_caption",
                                                                 "type": "text",
@@ -3212,7 +3271,7 @@
                                                                 "maxlength": ""
                                                             },
                                                             {
-                                                                "key": "field_599c2eba5126a",
+                                                                "key": "field_59aeed7bf6778",
                                                                 "label": "Zoom In",
                                                                 "name": "zoom",
                                                                 "type": "true_false",
@@ -3478,6 +3537,56 @@
                                                                 "prepend": "",
                                                                 "append": "",
                                                                 "maxlength": ""
+                                                            },
+                                                            {
+                                                                "key": "field_59aef00bc2a52",
+                                                                "label": "Audio Link Size",
+                                                                "name": "audio_link_size",
+                                                                "type": "select",
+                                                                "instructions": "",
+                                                                "required": 0,
+                                                                "conditional_logic": 0,
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "large": "Large",
+                                                                    "small": "Small"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
+                                                            },
+                                                            {
+                                                                "key": "field_59aef08bc2a53",
+                                                                "label": "Audio Link Size",
+                                                                "name": "audio_link_size",
+                                                                "type": "select",
+                                                                "instructions": "",
+                                                                "required": 0,
+                                                                "conditional_logic": 0,
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "large": "Large",
+                                                                    "small": "Small"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
                                                             }
                                                         ],
                                                         "min": "",
@@ -4134,6 +4243,31 @@
                                                                 "prepend": "",
                                                                 "append": "",
                                                                 "maxlength": ""
+                                                            },
+                                                            {
+                                                                "key": "field_59aef0c7c2a54",
+                                                                "label": "Audio Link Size",
+                                                                "name": "audio_link_size",
+                                                                "type": "select",
+                                                                "instructions": "",
+                                                                "required": 0,
+                                                                "conditional_logic": 0,
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "large": "Large",
+                                                                    "small": "Small"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
                                                             }
                                                         ],
                                                         "min": "",
@@ -4790,6 +4924,31 @@
                                                                 "prepend": "",
                                                                 "append": "",
                                                                 "maxlength": ""
+                                                            },
+                                                            {
+                                                                "key": "field_59aef1a695d02",
+                                                                "label": "Audio Link Size",
+                                                                "name": "audio_link_size",
+                                                                "type": "select",
+                                                                "instructions": "",
+                                                                "required": 0,
+                                                                "conditional_logic": 0,
+                                                                "wrapper": {
+                                                                    "width": "",
+                                                                    "class": "",
+                                                                    "id": ""
+                                                                },
+                                                                "choices": {
+                                                                    "large": "Large",
+                                                                    "small": "Small"
+                                                                },
+                                                                "default_value": [],
+                                                                "allow_null": 0,
+                                                                "multiple": 0,
+                                                                "ui": 0,
+                                                                "ajax": 0,
+                                                                "return_format": "value",
+                                                                "placeholder": ""
                                                             }
                                                         ],
                                                         "min": "",
