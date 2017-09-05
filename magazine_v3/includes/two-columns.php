@@ -23,6 +23,7 @@
 											<?php elseif(get_row_layout() == "column_audio_link"):?>
 											
 												<?php include('audio-link.php');?>
+											
 																			
 											<?php elseif(get_row_layout() == "accordion"):?>
 											<div class="accordion-box">
@@ -65,9 +66,7 @@
 									 										 
 											<?php elseif(get_row_layout() == "column_audio_link"):?>
 											
-											<?php $selectAudio = get_sub_field('select_audio_file'); if ($selectAudio == "text_link"):?><div class="play-audio" audioUrl="<?php the_sub_field('audio_text_url');?>"><?php the_sub_field('audio_title');?> <i class="material-icons">volume_up</i></div><? endif;?>
-											<?php $selectAudio = get_sub_field('select_audio_file'); if ($selectAudio == "upload"):?><div class="play-audio" audioUrl="<?php the_sub_field('audio_upload');?>"><?php the_sub_field('audio_title');?> <i class="material-icons">volume_up</i></div><? endif;?>
-												
+											<?php include('audio-link.php');?>												
 																			
 											<?php elseif(get_row_layout() == "accordion"):?>
 											

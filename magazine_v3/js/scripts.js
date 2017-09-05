@@ -75,7 +75,7 @@ $(document).ready(function () {
     /*Audio Controls*/
     
 
-    $(".play-audio").click(function () {
+    $(".play-audio, .big-play-btn").click(function () {
 	    $('.audio-box').fadeIn();
         $('.myAudio').attr("src", $(this).attr("audioUrl"));
         $(".footer-audio").addClass('show-audio');
@@ -84,6 +84,11 @@ $(document).ready(function () {
         $(".side-buttons").removeClass('show-side');
         $('.btt-footer').fadeOut(500);
     });
+    
+    $(".big-play-btn").click(function () {
+	    $('.audio-spinner').fadeIn(500);
+	    
+      });
 
     $(".audio-box .hide-audio").click(function () {
         $(".footer-audio").removeClass('show-audio');
@@ -105,6 +110,7 @@ $(document).ready(function () {
         document.getElementById('myAudio').pause();
         $('.btt-footer').fadeIn(500);
         $('.audio-box').fadeOut();
+        $('.audio-spinner').fadeOut(500);
     });
 
     $(function () {
@@ -119,6 +125,7 @@ $(document).ready(function () {
         document.getElementById('myAudio').pause();
         $('.btt-footer').fadeIn(500);
         $('.audio-box').fadeOut();
+        $('.audio-spinner').fadeOut(500);
 	}
 	
 	$( ".movie-btn" ).click(function() {
@@ -141,7 +148,7 @@ $(document).ready(function () {
          closeAudio();
      });
     
-    $(".widscreen-btn").click(function() { 
+    $(".widescreen-btn").click(function() { 
         $(".modal-vid").fadeIn(500);
         $(".vid-holder img").removeClass("show");
         $(".widescreen-img").addClass("show");
