@@ -2,6 +2,8 @@
 ## Overview:
 Magazine is a slim framework primarily designed for tablets and desktop as either a multipage or single page website. The JS and CSS has been optimized to support audio, video, menus, smooth scrolling, image light boxes, video backgrounds and parallax effects without all the overhead created by including additional script and style libraries. Below are list of features included with this framework.
 
+## YouTube Introduction:  
+https://www.youtube.com/watch?v=QwHhWOJy740  
 ## Features:
 * Fully Responsive
 * Support for iframe and video lightboxes
